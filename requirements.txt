@@ -1,6 +1,6 @@
 pandas == 1.2.4
 numpy == 1.19.5
-stramlit == 1.0.0
+streamlit == 1.0.0
 altair == 4.1.0
 matplotlib
 yfinance == 4.1.0
