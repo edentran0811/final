@@ -14,7 +14,7 @@ from tensorflow import keras
 st.title("Researching about Amazon, Tesla Stocks")
 
 # Numeric columns in df1
-df1 = pd.read_csv("C:\\Amazon.csv")
+df1 = pd.read_csv("Amazon.csv")
 df1 = df1.applymap(lambda x: np.nan if x == " " else x)
 def can_be_numeric(c):
     try:
@@ -26,7 +26,7 @@ good_cols_a = [c for c in df1.columns if can_be_numeric(c)]
 df1[good_cols_a] = df1[good_cols_a].apply(pd.to_numeric, axis = 0)
 
 # Numeric columns in df2
-df2 = pd.read_csv("C:\\TSLA.csv")        
+df2 = pd.read_csv("TSLA.csv")        
 df2 = df2.applymap(lambda x: np.nan if x == " " else x)
 def can_be_numeric(d):
     try:
