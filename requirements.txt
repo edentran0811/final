@@ -6,3 +6,4 @@ matplotlib
 yfinance == 0.1.67
 datetime
 scikit-learn == 0.24.1
+tensorflow
